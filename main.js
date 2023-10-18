@@ -240,3 +240,38 @@ const pets = [
       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
     }
   ];
+
+const renderToDom = () => {
+
+  let domString = ""
+  for (let i = 0; i < pets.length; i++) {
+    domString += `<div class="card" style="width: 18rem;">
+    <img src=${pets[i].imageUrl} class="card-img-top" alt=${pets[i].name}>
+    <div class="card-body">
+      <h5 class="card-title">${pets[i].name}</h5>
+      <p class="card-text">${pets[i].specialSkill}</p>
+    </div>
+  </div>`;
+  }
+  const app = document.querySelector("#app")
+  app.innerHTML = domString;
+}  
+renderToDom(pets)
+
+
+
+const btn = document.querySelector('#dog')
+
+const filter = () => {
+  let dogPetArray = []
+
+  for( let i =0; i < pets.length; i++) {
+    if (pets[i].type === "dog"){
+        dogPetArray.push(pets)
+    }
+  }
+  console.log('dogs only', dogPetArray)
+  renderToDom(dogPetArray)
+}
+
+btn.addEventlistener( 'click' , filter())
