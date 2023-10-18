@@ -241,7 +241,7 @@ const pets = [
     }
   ];
 
-const renderToDom = () => {
+const renderToDom = (array) => {
 
   let domString = ""
   for (let i = 0; i < pets.length; i++) {
@@ -260,18 +260,21 @@ renderToDom(pets)
 
 
 
-const btn = document.querySelector('#dog')
+const dogBtn = document.querySelector("#dog")
 
-const filter = () => {
-  let dogPetArray = []
+dogBtn.addEventListener("click" , () => {
+  filter(pets)
+})
 
-  for( let i =0; i < pets.length; i++) {
-    if (pets[i].type === "dog"){
-        dogPetArray.push(pets)
-    }
+const filter = (array) => {
+  let dogArray = []
+
+  for(pet of array) {
+    if (pet.type === "dog"){
+       dogArray.push(pet)
+    }  
   }
-  console.log('dogs only', dogPetArray)
-  renderToDom(dogPetArray)
-}
+  console.log('dogs only')
+  renderToDom(dogArray)
 
-btn.addEventlistener( 'click' , filter())
+}
