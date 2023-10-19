@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "http://www.funnycatsite.cm/pictures/Lazy_White_Cat.jpg"
     },
     {
       id: 21,
@@ -244,12 +244,12 @@ const pets = [
 const renderToDom = (array) => {
 
   let domString = ""
-  for (let i = 0; i < pets.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     domString += `<div class="card" style="width: 18rem;">
-    <img src=${pets[i].imageUrl} class="card-img-top" alt=${pets[i].name}>
+    <img src=${array[i].imageUrl} class="card-img-top" alt=${array[i].name}>
     <div class="card-body">
-      <h5 class="card-title">${pets[i].name}</h5>
-      <p class="card-text">${pets[i].specialSkill}</p>
+      <h5 class="card-title">${array[i].name}</h5>
+      <p class="card-text">${array[i].specialSkill}</p>
     </div>
   </div>`;
   }
@@ -261,20 +261,28 @@ renderToDom(pets)
 
 
 const dogBtn = document.querySelector("#dog")
+const catBtn = document.querySelector("#cat")
+const dinoBtn = document.querySelector("#dino")
 
 dogBtn.addEventListener("click" , () => {
-  filter(pets)
+  filter(pets, "dog")
 })
 
-const filter = (array) => {
-  let dogArray = []
+catBtn.addEventListener("click" , () => {
+   filter(pets, "cat")
+})
+
+dinoBtn.addEventListener("click" , () => {
+  filter(pets, "dino")
+})
+
+const filter = (array, animalType) => {
+  let petArray = []
 
   for(pet of array) {
-    if (pet.type === "dog"){
-       dogArray.push(pet)
+    if (pet.type === animalType){
+       petArray.push(pet)
     }  
-  }
-  console.log('dogs only')
-  renderToDom(dogArray)
-
+  } 
+  renderToDom(petArray)
 }
