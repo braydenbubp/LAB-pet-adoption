@@ -1,4 +1,62 @@
 #app {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.myClass {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#btnAlign {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+#dog {
+  background-color: green;
+  border: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+#cat{
+  background-color: lightseagreen;
+  border: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+#dino {
+  background-color: gold;
+  border: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+#all {
+  background-color: lightsalmon;
+  border: none;
+  width: 100px;
+  font-weight: 600;
+}
+
+.cat{
+  background-color: lightseagreen;
+  border: none;
+  font-weight: 600;
+}
+
+.dog {
+  background-color: green;
+  border: none;
+  font-weight: 600;
+}
+
+.dino {
+  background-color: gold;
+  border: none;
+  font-weight: 600;
 }
