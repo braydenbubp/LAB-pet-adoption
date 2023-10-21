@@ -258,7 +258,7 @@ const renderToDom = (array) => {
       <p class="card-text">${array[i].specialSkill}</p>
     </div>
 
-    <button id="delete--${array[i].id}">Remove Pet</button>
+    <button class="remove" id="delete--${array[i].id}">Remove Pet</button>
 
     <div class="card-footer text-center text-body-secondary ${array[i].type}">
         <p>${array[i].type}</p>

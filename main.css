@@ -10,6 +10,7 @@
 }
 
 #btnAlign {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -59,4 +60,9 @@
   background-color: gold;
   border: none;
   font-weight: 600;
+}
+
+.remove {
+  border: none;
+  background-color: burlywood;
 }
