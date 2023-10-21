@@ -241,19 +241,30 @@ const pets = [
     }
   ];
 
+const app = document.querySelector("#app")
+
 const renderToDom = (array) => {
 
   let domString = ""
   for (let i = 0; i < array.length; i++) {
-    domString += `<div class="card" style="width: 18rem;">
+    domString += `<div class="card text-center myClass" class="margin" style="width: 18rem;">
+
+    <div class="card-header text-center">${array[i].name}</div>
+
     <img src=${array[i].imageUrl} class="card-img-top" alt=${array[i].name}>
+
     <div class="card-body">
-      <h5 class="card-title">${array[i].name}</h5>
+      <h5 class="card-title">${array[i].color}</h5>
       <p class="card-text">${array[i].specialSkill}</p>
     </div>
+
+    <button id="delete--${array[i].id}">Remove Pet</button>
+
+    <div class="card-footer text-center text-body-secondary ${array[i].type}">
+        <p>${array[i].type}</p>
+      </div>
   </div>`;
   }
-  const app = document.querySelector("#app")
   app.innerHTML = domString;
 }  
 renderToDom(pets)
@@ -263,6 +274,7 @@ renderToDom(pets)
 const dogBtn = document.querySelector("#dog")
 const catBtn = document.querySelector("#cat")
 const dinoBtn = document.querySelector("#dino")
+const allBtn = document.querySelector("#all")
 
 dogBtn.addEventListener("click" , () => {
   filter(pets, "dog")
@@ -276,13 +288,64 @@ dinoBtn.addEventListener("click" , () => {
   filter(pets, "dino")
 })
 
-const filter = (array, animalType) => {
-  let petArray = []
+allBtn.addEventListener("click" , () => {
+  renderToDom(pets)
+})
 
-  for(pet of array) {
-    if (pet.type === animalType){
-       petArray.push(pet)
-    }  
-  } 
+const filter = (array, animalType) => {
+  // let petArray = []
+
+  let petArray = array.filter((pet) => pet.type == animalType)
+
+  // if (animalType === "all"){
+  //   return renderToDom(pets)
+  // }else {
+  //   for(pet of array) {
+  //   if (pet.type === animalType){
+  //      petArray.push(pet)
+  //   }  }
+  // } 
   renderToDom(petArray)
 }
+
+
+const form = document.querySelector('form')
+  
+
+const newPet = (event) => {
+  event.preventDefault()
+
+  const newPetObj = {
+    id: pets.length + 1, 
+    name: document.querySelector("#petName").value,
+    color: document.querySelector("#petColor").value,
+    specialSkill: document.querySelector("#petSkill").value,
+    type: document.querySelector('input[name="exampleRadios"]:checked').value,
+    imageUrl: document.querySelector("#petImg").value,
+  }; console.log(newPetObj)
+
+  pets.push(newPetObj)
+  console.log(pets.length)
+  renderToDom(pets)
+  form.reset()
+}
+
+form.addEventListener('submit', newPet)
+
+const deletePet = (event) => {
+  
+  if(event.target.id.includes("delete")){
+    //remove pet once we get the right button
+    //determine the correct object, get id
+    const [,id] = event.target.id.split("--");
+    //identify where in the array is it
+    const index = pets.findIndex(obj => obj.id === Number(id));
+    console.log(index);
+    //re-render with the array
+    pets.splice(index, 1);
+    console.log(pets.length);
+    //render with removal in place
+    renderToDom(pets);
+  }
+}
+app.addEventListener("click", deletePet);
