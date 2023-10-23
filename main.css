@@ -10,6 +10,7 @@
 }
 
 #btnAlign {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -64,3 +65,5 @@
 .imgSize {
   height: 250px;
 }
+
+
