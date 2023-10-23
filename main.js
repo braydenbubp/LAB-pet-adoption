@@ -13,7 +13,8 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       type: "dino",
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6xgo9S5jyv1Vss6-7inSVljRBcWOb21N3CA&usqp=CAU",
+      
     },
     {
       id: 3,
@@ -37,7 +38,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "cat",
-      imageUrl: "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZlbYsuZhqLgnYM6m7hk9OrS-QsQk6YceY-g&usqp=CAU"
     },
     {
       id: 6,
@@ -61,7 +62,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       type: "dino",
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0nVzaW1BBoAVKgRGa5MfpBZItpktR-Yo0RA&usqp=CAU"
     },
     {
       id: 9,
@@ -85,7 +86,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       type: "dino",
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMqpSxgtGbFgZBUuwILbq3Y_XDHcFkfSrEA&usqp=CAU"
     },
     {
       id: 12,
@@ -101,7 +102,7 @@ const pets = [
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
       type: "dog",
-      imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAKx2pNfSc2Pox7mi9fsNOk4hZ_HZjEe4Ng&usqp=CAU"
     },
     {
       id: 14,
@@ -125,7 +126,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       type: "dino",
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFr_SiRx87sBYKiFSKv77hO307bZN-pep7CQ&usqp=CAU"
     },
     {
      id: 17,
@@ -133,7 +134,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG23nGg2_a8b1c-DejPxyjL65FsmBcfjabMg&usqp=CAU"
     },
     {
       id: 18,
@@ -141,7 +142,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       type: "dino",
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu1me_KHz7FAK5qnarAGIl2FECrA2RNmoolw&usqp=CAU"
     },
     {
       id: 19,
@@ -149,7 +150,7 @@ const pets = [
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
       type: "dog",
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzySO8TACxxZVykdof7q6tJYrA8c_XfgGV8w&usqp=CAU"
     },
     {
       id: 20,
@@ -157,7 +158,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       type: "cat",
-      imageUrl: "http://www.funnycatsite.cm/pictures/Lazy_White_Cat.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-ujmpwXrAulUhUAdnZdRdiUwewy2pPK4fg&usqp=CAU"
     },
     {
       id: 21,
@@ -165,7 +166,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       type: "dino",
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL1-YvIXlB_T0Pl7N3lgsJrEzwMhAC4Ly4ng&usqp=CAU"
     },
     {
         id: 22,
@@ -173,7 +174,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       type: "cat",
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO4c6lcc6wW3NfJ0WkVlRQNHxgV-4AUw-LEg&usqp=CAU"
     },
     {
         id: 23,
@@ -189,7 +190,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       type: "dog",
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy_BZAZvcN87OWk0bcdhgQF4dsD_i9WKVl0g&usqp=CAU"
     },
     {
       id: 25,
@@ -197,7 +198,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       type: "cat",
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0wUklJVQuux0VEHoEYUf-B63jIQvk2aiKTg&usqp=CAU"
     },
     {
         id: 26,
@@ -237,7 +238,7 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       type: "dino",
-      imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwQJF0QTqTdiPFnLAjpIBrYPwCLnTQgGBZA&usqp=CAU"
     }
   ];
 
@@ -251,7 +252,7 @@ const renderToDom = (array) => {
 
     <div class="card-header text-center">${array[i].name}</div>
 
-    <img src=${array[i].imageUrl} class="card-img-top" alt=${array[i].name}>
+    <img src=${array[i].imageUrl} class="card-img-top imgSize" alt=${array[i].name}>
 
     <div class="card-body">
       <h5 class="card-title">${array[i].color}</h5>

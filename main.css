@@ -62,7 +62,8 @@
   font-weight: 600;
 }
 
-.remove {
-  border: none;
-  background-color: burlywood;
+.imgSize {
+  height: 250px;
 }
+
+
